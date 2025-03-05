@@ -1,3 +1,4 @@
+from sklearn.cluster import AgglomerativeClustering
 def agglomerative_clustering(reduced_embeddings, n_clusters):
     """
     Applique l'Agglomerative Clustering avec un nombre fixe de clusters.

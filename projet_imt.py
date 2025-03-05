@@ -8,18 +8,14 @@ from utils.reduction_dimesion import *
 
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import ast
 import umap
-from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
 from sklearn.cluster import AgglomerativeClustering
-from sklearn.metrics import silhouette_score
 
 
 def main():
     # lecture du fichier csv
-    df = load .....
+    df = pd.read_csv("/Users/mac/Desktop/topic_modeling/df_user_messages_new.csv")
     # reduction des dimensions
     reduced_embeddings = reduce_embeddings(df, n_components=50, random_state=42)
     # clustering
@@ -29,6 +25,9 @@ def main():
     # afficher les resultats
     messages_par_cluster= afficher_messages_par_cluster(df,labels)
 
+    return messages_par_cluster
+
 
 if __name__ == "__main__":
-    main()
+    messages_par_cluster = main()
+    print(messages_par_cluster)

@@ -1,3 +1,4 @@
+from sklearn.metrics import silhouette_score
 def compute_silhouette_scores(reduced_embeddings, labels):
     """
     Calcule les scores de silhouette pour différents nombres de clusters.
