@@ -28,3 +28,7 @@ def main():
     silhouette_score = compute_silhouette_scores(reduced_embeddings, labels)
     # afficher les resultats
     messages_par_cluster= afficher_messages_par_cluster(df,labels)
+
+
+if __name__ == "__main__":
+    main()
