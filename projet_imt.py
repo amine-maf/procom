@@ -6,13 +6,6 @@ from results.affichage_messages_par_cluster import *
 from utils.reduction_dimesion import *
 
 
-import pandas as pd
-import numpy as np
-import umap
-from sklearn.metrics import silhouette_score
-from sklearn.cluster import AgglomerativeClustering
-
-
 def main():
     # lecture du fichier csv
     df = pd.read_csv("/Users/mac/Desktop/topic_modeling/df_user_messages_new.csv")
