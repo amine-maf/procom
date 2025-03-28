@@ -5,6 +5,6 @@ Ce projet vise à analyser et structurer les messages des touristes en utilisant
 
 ## 📊 Objectifs  
 - Identifier les thématiques principales des messages.  
-- Comparer **KMeans** et **Agglomerative Clustering** pour voir quel algorithme classe mieux les messages.  
+- Comparer **KMeans** et **Agglomerative Clustering**, **BERTopic** et **Gaussian Mixture** pour voir quel algorithme classe mieux les messages.  
 - Détecter les messages mal classifiés et analyser leur repositionnement.  
 - Fournir une meilleure structuration des réponses automatiques.  
