@@ -1,6 +1,6 @@
-def print_topics_per_cluster(df, agg_labels):
-    # Ajouter agg_labels comme colonne 'cluster' dans df
-    df['cluster'] = agg_labels
+def print_topics_per_cluster(df, labels):
+    # Ajouter labels comme colonne 'cluster' dans df
+    df['cluster'] = labels
 
     print("\nTopics par cluster pour l'ensemble des données :")
     for cluster in sorted(df['cluster'].unique()):
