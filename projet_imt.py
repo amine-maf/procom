@@ -7,6 +7,8 @@ from utils.reduction_dimesion import *
 from utils.reduction_dimension_2d import *
 from results.visualize_clusters import *
 from topic generation.generate_topics import *
+from topic generation.print_topics_per_cluster import *
+
 
 
 #clé API
