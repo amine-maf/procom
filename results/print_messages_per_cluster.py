@@ -1,4 +1,4 @@
-def afficher_messages_par_cluster(df,labels):
+def print_messages_per_cluster(df,labels):
     """
     Ajoute les labels de cluster à la table et retourne les messages par cluster.
 
