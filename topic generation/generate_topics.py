@@ -1,3 +1,5 @@
+import openai
+
 def generate_topics_for_cluster(messages_cluster):
     prompt = f"Donne les principaux sujets ou thèmes pour les messages suivants :\n\n" + "\n".join(messages_cluster) + "\n\nQuels sont les topics principaux de ces messages ?"
     # Ancienne syntaxe pour la version 0.29
