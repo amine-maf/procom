@@ -28,13 +28,16 @@ def main():
     # visualisation des clusters en 2D
     visualize_clusters(reduced_embeddings_2d, cluster_labels, title="Clusters visualisés en 2D")
     # metriques de clustering
-    silhouette_score = compute_silhouette_scores(reduced_embeddings, labels)
+    silhouette_score = compute_silhouette_scores(reduced_embeddings, cluster_labels)
     # afficher les resultats
-    messages_par_cluster= afficher_messages_par_cluster(df,labels)
+    messages_par_cluster= afficher_messages_par_cluster(df, cluster_labels)
+    # afficher les messages avec les topics
+    resultats= print_topics_per_cluster(df, cluster_labels):
 
-    return messages_par_cluster
+
+    return resultats
 
 
 if __name__ == "__main__":
-    messages_par_cluster = main()
-    print(messages_par_cluster)
+    resultats = main()
+    print(resultats)
