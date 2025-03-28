@@ -6,6 +6,12 @@ from results.affichage_messages_par_cluster import *
 from utils.reduction_dimesion import *
 from utils.reduction_dimension_2d import *
 from results.visualize_clusters import *
+from topic generation.generate_topics import *
+
+
+#clé API
+openai.api_key = "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"
+
 
 
 def main():
