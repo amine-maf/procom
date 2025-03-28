@@ -2,7 +2,7 @@
 
 from clustering.agg_clustering import *
 from clustering.mesures_clustering import *
-from results.affichage_messages_par_cluster import *
+from results.print_messages_per_cluster import *
 from utils.reduction_dimesion import *
 from utils.reduction_dimension_2d import *
 from results.visualize_clusters import *
@@ -30,7 +30,7 @@ def main():
     # metriques de clustering
     silhouette_score = compute_silhouette_scores(reduced_embeddings, cluster_labels)
     # afficher les resultats
-    messages_par_cluster= afficher_messages_par_cluster(df, cluster_labels)
+    messages_par_cluster= print_messages_per_cluster(df, cluster_labels)
     # afficher les messages avec les topics
     resultats= print_topics_per_cluster(df, cluster_labels):
 
