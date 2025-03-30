@@ -1,4 +1,6 @@
 from sklearn.metrics import silhouette_score
+from scipy.spatial.distance import pdist, squareform
+
 
 def compute_silhouette_scores(reduced_embeddings, labels):
     """
