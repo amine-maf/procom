@@ -12,7 +12,7 @@ from topicgeneration.print_topics_per_cluster import *
 
 
 #clé API
-openai.api_key = "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"
+openai.api_key = "your API Key"
 
 
 
