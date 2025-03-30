@@ -29,6 +29,7 @@ def main():
     visualize_clusters(reduced_embeddings_2d, cluster_labels, title="Clusters visualisés en 2D")
     # metriques de clustering
     silhouette_score = compute_silhouette_scores(reduced_embeddings, cluster_labels)
+    dunn_index = compute_dunn_index(reduced_embeddings, cluster_labels)
     # afficher les resultats
     messages_par_cluster= print_messages_per_cluster(df, cluster_labels)
     # afficher les messages avec les topics
